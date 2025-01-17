@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mussical Audition</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</head>
+<body class="w-auto">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark w-auto">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">DreamMaker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item mr-3">
+                    <a class="nav-link text-light" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item mr-3">
+                    <a class="nav-link" href="#registrant">Audition</a>
+                  </li>
+                  <li class="nav-item mr-3">
+                    <a class="nav-link" href="#form">Register</a>
+                  </li>
+                  <li class="nav-item mr-3">
+                    <a class="nav-link" href="javascript:void(0)">Contact</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <form class="d-flex">
+                  <input class="form-control me-2 rounded-pill w-75" type="text" placeholder="Search" id="searching">
+                  <button class="btn btn-light btn-outline-dark w-40 ml-3 border-0 rounded-pill pl-lg-4 pr-lg-4" type="button" style="margin: 3px 0;">Search</button>
+                </form>
+            </div>
+        </div>
+        </div>
+      </nav>
+
+    <div class="container mt-5" id="home">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Welcome to DreamMaker</h1>
+                <p class="lead">Your Stage, Your Dream</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-8 offset-md-2 text-center">
+                <p>DreamMaker is not just a production house; it's a platform where dreams come alive through the enchanting world of musical theater. We believe in the power of storytelling, the magic of music, and the transformative experience of live performances.</p>
+                <p>Aspiring actors and actresses, this is your opportunity to step into the spotlight and make your mark on the stage. DreamMaker offers a unique platform for talented individuals to showcase their passion and skill in the art of musical theater.</p>
+                <p>Explore our upcoming musicals, discover the characters waiting to be brought to life, and embark on a journey of creativity and expression.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <a href="audisi.html" class="btn btn-dark btn-lg">Join Audition Now</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-5 g-0 justify-content-center pl-1">
+        <div class="col g-0">
+            <img src="https://th.bing.com/th/id/R.6978f82ed47ff52025404c00faecd1a3?rik=WIiAjzeKhdsvtA&riu=http%3a%2f%2fwww.musicalvienna.at%2fmedia%2fimage%2f18169__785.5139.CATS.jpg&ehk=YWeeBA2gQYH3mLncaqZuSafzBH34wW2HDhnHDiXR%2fBg%3d&risl=&pid=ImgRaw&r=0" alt="" class="card-img" style="max-height: 350px;">
+        </div>
+        <div class="col g-0">
+            <img src="https://cdn.images.express.co.uk/img/dynamic/38/590x/secondary/WICKED-947587.jpg" alt="" class="card-img" style="max-height: 350px;">
+        </div>
+    </div>
+
+    <div class="row g-0">
+        <div class="col g-0">
+            <img src="https://www.musicalplanet.net/media/rebecca-stuttgart-2011-05.jpg" alt="" class="col-lg-6 col-sm-12 card-img" style="max-height: 350px;">
+        </div>
+        <div class="col g-0">
+            <img src="https://media04.meinbezirk.at/article/2022/09/23/0/31003870_XXL.jpg" alt="" class="col-lg-6 col-sm-12 card-img" style="max-height: 350px;">
+        </div>
+    </div>
+    
+    <h2 class="text-center mt-5 fw-bold text-decoration-underline">Our Mussical Theater</h2>
+    <div class="row m-4 d-flex justify-content-between mt-3">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-dark m-4">
+                <div class="card-header">
+                    <img src="img/cats.jpg" alt="" class="rounded" style="width: 100%;">
+                </div>
+                <div class="card-body text-white font-weight-bold h3 text-center">CATS</div>
+                <div class="card-footer pb-4">
+                    <table class="text-white">
+                        <tr>
+                            <th class="w-25">Genre</th>
+                            <td class="text-justify">Musical, Fantasy</td>
+                        </tr>
+                        <tr>
+                            <th class="align-text-top">Synopsis</th>
+                            <td class="text-justify">"Cats" is a musical based on T.S. Eliot's collection of poems, "Old Possum's Book of Practical Cats." The musical portrays the lives of cats during a special night known as the "Jellicle Ball." Each cat introduces itself and shares its unique story. The narrative reaches its climax when Old Deuteronomy, the Jellicle cat leader, selects the cat worthy of receiving a "rebirth."</td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-dark m-4">
+                <div class="card-header">
+                    <img src="img/rebecca.jpg" alt="" class="rounded" style="width: 100%;">
+                </div>
+                <div class="card-body text-white font-weight-bold h3 text-center">Rebecca</div>
+                <div class="card-footer pb-4">
+                    <table class="text-white">
+                        <tr>
+                            <th class="w-25">Genre</th>
+                            <td class="text-justify">Romantic Drama, Mystery</td>
+                        </tr>
+                        <tr>
+                            <th class="align-text-top">Synopsis</th>
+                            <td class="text-justify">"Rebecca" is a musical adapted from Daphne du Maurier's classic novel. It tells the story of a young woman who marries the wealthy widower Maxim de Winter and moves to Manderley. There, she confronts the haunting shadow of Maxim's first wife, Rebecca, who died mysteriously. The musical unfolds a gripping mystery as dark secrets are revealed.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-dark m-4">
+                <div class="card-header">
+                    <img src="img/wicked.jpg" alt="" class="rounded" style="width: 100%;">
+                </div>
+                <div class="card-body text-white font-weight-bold h3 text-center">Wicked</div>
+                <div class="card-footer pb-4">
+                    <table class="text-white">
+                        <tr>
+                            <th class="w-25">Genre</th>
+                            <td class="text-justify">Musical, Fantasy</td>
+                        </tr>
+                        <tr>
+                            <th class="align-text-top">Synopsis</th>
+                            <td class="text-justify">"Wicked" is a fantasy tale that provides a different perspective on "The Wizard of Oz" story. It focuses on the relationship between Elphaba the Wicked Witch of the West, and Glinda the Good Witch of the North. The two form a friendship at a magic school and face conflicts in the land of Oz. "Wicked" explores friendship, acceptance, and judgment of differences.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center text-decoration-underline fw-bold" style="margin-top: 100px;">REGISTRANT</h2>
+
+    <div class="container bg-light mt-4 rounded shadow-sm p-4 mb-4" style="background-color: #ffffff;" id="registrant">
+        <div class="table-responsive">
+            <table id="myTable" class="table table-striped table-hover table-bordered dataTable no-footer" aria-describedby="myTable_info">
+                <thead class="table-dark">
+                    <tr class="text-center justify-content-center align-items-center">
+                        <th>Musical</th>
+                        <th>Email</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>Date</th>
+                        <th>Month</th>
+                        <th>Year</th>
+                        <th>Age</th>
+                        <th>Character</th>
+                        <th>Experience</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td>Cats</td>
+                        <td>yurikwon@gmail.com</td>
+                        <td>Yuri</td>
+                        <td>Kwon</td>
+                        <td>Female</td>
+                        <td>5</td>
+                        <td>December</td>
+                        <td>1989</td>
+                        <td>34</td>
+                        <td>Bombalurina</td>
+                        <td>16th years since debut and have a lot of popular drama and movies</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delete-btn" data-index="{{i}}">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rebecca</td>
+                        <td>seojoohyun@gmail.com</td>
+                        <td>Joohyun</td>
+                        <td>Seo</td>
+                        <td>Female</td>
+                        <td>26</td>
+                        <td>June</td>
+                        <td>1991</td>
+                        <td>32</td>
+                        <td>Grisabella</td>
+                        <td>16th years and have a lot of popular drama</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delete-btn" data-index="{{i}}">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wicked</td>
+                        <td>choisooyoung@gmail.com</td>
+                        <td>Sooyoung</td>
+                        <td>Choi</td>
+                        <td>Female</td>
+                        <td>12</td>
+                        <td>February</td>
+                        <td>1990</td>
+                        <td>33</td>
+                        <td>Elphaba</td>
+                        <td>16th years as an actress</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delete-btn" data-index="{{i}}">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cats</td>
+                        <td>chajiyeon@gmail.com</td>
+                        <td>JiYeon</td>
+                        <td>Cha</td>
+                        <td>Female</td>
+                        <td>22</td>
+                        <td>February</td>
+                        <td>1982</td>
+                        <td>41</td>
+                        <td>Rum Tum Tugger</td>
+                        <td>18th years since debut with a focus on musicals</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delete-btn" data-index="{{i}}">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rebecca</td>
+                        <td>goyounjung@gmail.com</td>
+                        <td>Younjung</td>
+                        <td>Go</td>
+                        <td>Female</td>
+                        <td>22</td>
+                        <td>April</td>
+                        <td>1996</td>
+                        <td>27</td>
+                        <td>Glinda</td>
+                        <td>5th years since debut, known for dramatic roles</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delete-btn" data-index="{{i}}">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wicked</td>
+                        <td>kimtaehee@gmail.com</td>
+                        <td>Taehee</td>
+                        <td>Kim</td>
+                        <td>Female</td>
+                        <td>29</td>
+                        <td>March</td>
+                        <td>1980</td>
+                        <td>43</td>
+                        <td>Glinda</td>
+                        <td>20th years since debut, versatile actress in musicals and dramas</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delete-btn" data-index="{{i}}">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cats</td>
+                        <td>jungeunji@gmail.com</td>
+                        <td>Eunji</td>
+                        <td>Jung</td>
+                        <td>Female</td>
+                        <td>18</td>
+                        <td>August</td>
+                        <td>1993</td>
+                        <td>30</td>
+                        <td>Demeter</td>
+                        <td>12th years since debut, acclaimed for dance performances</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delete-btn" data-index="{{i}}">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rebecca</td>
+                        <td>wendyson@gmail.com</td>
+                        <td>Wendy</td>
+                        <td>Son</td>
+                        <td>Female</td>
+                        <td>21</td>
+                        <td>February</td>
+                        <td>1994</td>
+                        <td>29</td>
+                        <td>Mrs. Danvers</td>
+                        <td>9th years since debut, specializes in intense character roles</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delete-btn" data-index="{{i}}">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="#form">
+            <button class="btn btn-dark w-100 mt-4">REGISTER</button>
+        </a>
+    </div>
+
+    <div class="container justify-content-center shadow-sm mb-4 mt-5" style="background-color: #cbcbcb;" id="form">
+        <br>
+        <h1 class="text-center text-dark">Musical Audition</h1>
+        <form id="myForm" class="p-lg-5 p-md-4 p-sm-2" novalidate>
+            <div class="form-group">
+                <label for="musicalType" class="text-white">Musical Type :</label>
+                <select class="form-control rounded-pill bg-dark text-white" id="musicalType" required>
+                    <option value="CATS">CATS</option>
+                    <option value="Rebecca">Rebecca</option>
+                    <option value="Wicked">Wicked</option>
+                </select>
+                <p></p>
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-dark mb-2">EMAIL :</label>
+                <input type="email" class="form-control rounded-pill" id="email" required>
+                <p class="p5"></p>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="first-name" class="text-dark mb-2">FIRST NAME :</label>
+                        <input type="text" class="form-control rounded-pill" id="first-name" required>
+                        <p class="p1"></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="last-name" class="text-dark mb-2">LAST NAME :</label>
+                        <input type="text" class="form-control rounded-pill" id="last-name" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="text-dark mb-2">GENDER :</label>
+                <select class="form-control rounded-pill" id="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <p></p>
+            </div>
+            <div class="form-group">
+                <label for="birth-date" class="text-dark mb-2">BIRTH DATE :</label>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <select type="number" id="date" name="birth-date" class="form-control rounded-pill bg-dark text-white">
+                            <option value="" selected="selected>">Date</option>
+                            <option value="1" >1</option>
+                            <option value="2" >2</option>
+                            <option value="3" >3</option>
+                            <option value="4" >4</option>
+                            <option value="5" >5</option>
+                            <option value="6" >6</option>
+                            <option value="7" >7</option>
+                            <option value="8" >8</option>
+                            <option value="9" >9</option>
+                            <option value="10" >10</option>
+                            <option value="11" >11</option>
+                            <option value="12" >12</option>
+                            <option value="13" >13</option>
+                            <option value="14" >14</option>
+                            <option value="15" >15</option>
+                            <option value="16" >16</option>
+                            <option value="17" >17</option>
+                            <option value="18" >18</option>
+                            <option value="19" >19</option>
+                            <option value="20" >20</option>
+                            <option value="21" >21</option>
+                            <option value="22" >22</option>
+                            <option value="23" >23</option>
+                            <option value="24" >24</option>
+                            <option value="25" >25</option>
+                            <option value="26" >26</option>
+                            <option value="27" >27</option>
+                            <option value="28" >28</option>
+                            <option value="29" >29</option>
+                            <option value="30" >30</option>
+                            <option value="31" >31</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <select type="month" id="month" name="birth-month" class="form-control rounded-pill bg-dark text-white">
+                            <option value="" selected="selected>">Month</option>
+                            <option value="jan" >January</option>
+                            <option value="feb" >February</option>
+                            <option value="mar" >March</option>
+                            <option value="apr" >April</option>
+                            <option value="may" >May</option>
+                            <option value="jun" >June</option>
+                            <option value="jul" >July</option>
+                            <option value="aug" >August</option>
+                            <option value="sep" >September</option>
+                            <option value="oct" >October</option>
+                            <option value="nov" >November</option>
+                            <option value="dec" >December</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <select type="year" id="year" name="birth-year" class="form-control rounded-pill bg-dark text-white">
+                            <option value="" selected="selected>">Year</option>
+                            <option value="1950">1950</option>
+                            <option value="1951">1951</option>
+                            <option value="1952">1952</option>
+                            <option value="1953">1953</option>
+                            <option value="1954">1954</option>
+                            <option value="1955">1955</option>
+                            <option value="1956">1956</option>
+                            <option value="1957">1957</option>
+                            <option value="1958">1958</option>
+                            <option value="1959">1959</option>
+                            <option value="1960">1960</option>
+                            <option value="1961">1961</option>
+                            <option value="1962">1962</option>
+                            <option value="1963">1963</option>
+                            <option value="1964">1964</option>
+                            <option value="1965">1965</option>
+                            <option value="1966">1966</option>
+                            <option value="1967">1967</option>
+                            <option value="1968">1968</option>
+                            <option value="1969">1969</option>
+                            <option value="1970">1970</option>
+                            <option value="1971">1971</option>
+                            <option value="1972">1972</option>
+                            <option value="1973">1973</option>
+                            <option value="1974">1974</option>
+                            <option value="1975">1975</option>
+                            <option value="1976">1976</option>
+                            <option value="1977">1977</option>
+                            <option value="1978">1978</option>
+                            <option value="1979">1979</option>
+                            <option value="1980">1980</option>
+                            <option value="1981">1981</option>
+                            <option value="1982">1982</option>
+                            <option value="1983">1983</option>
+                            <option value="1984">1984</option>
+                            <option value="1985">1985</option>
+                            <option value="1986">1986</option>
+                            <option value="1987">1987</option>
+                            <option value="1988">1988</option>
+                            <option value="1989">1989</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                        </select>
+                    </div>
+                    <P class="p4"></P>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age" class="text-dark mb-2">AGE :</label>
+                <input type="number" class="form-control rounded-pill" id="age" required>
+                <p class="p2"></p>
+            </div>
+            <div class="form-group">
+                <label for="character" class="text-dark mb-2">CHARACTER :</label>
+                <input type="text" class="form-control rounded-pill" id="character" required>
+                <p class="p3"></p>
+            </div>
+            <div class="form-group">
+                <label for="experience" class="text-dark mb-2">EXPERIENCE :</label>
+                <textarea class="form-control rounded-3" id="experience" rows="3"></textarea>
+                <p></p>
+            </div>
+                <button type="submit" class="btn btn-dark w-100 mt-4" id="submit">SUBMIT</button>
+        </form>
+        <br>
+    </div>
+
+    <div class="d-flex m-5 justify-content-center px-3 my-5">
+        <a href="">
+            <button type="button" class="btn btn-danger w-100">KELUAR</button>
+        </a>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#myForm").submit(function(event) {
+                event.preventDefault();
+                var email = $('#email').val();
+                var firstname = $("#first-name").val();
+                var lastname = $("#last-name").val();
+                var date = $("#date").val();
+                var month = $("#month").val();
+                var year = $("#year").val();
+                var gender = $("#gender").val();
+                var age = $("#age").val();
+                var character = $("#character").val();
+                var experience = $("#experience").val();
+                var musicalType = $("#musicalType").val();
+
+                if(!email){
+                    $('#myForm .p5').text("Please Enter Your Email");
+                    return;
+                } else{
+                    $('#myForm .p5').text("");
+                }
+
+                if(!firstname || !lastname){
+                    $('#myForm .p1').text("Please Enter Your Name");
+                    return;
+                } else{
+                    $('#myForm .p1').text("");
+                }
+
+                if(!age){
+                    $('#myForm .p2').text("Please Enter Your Age");
+                    return;
+                } else{
+                    $('#myForm .p2').text("");
+                }
+
+                if(!date || !month || !year){
+                    $('#myForm .p4').text("Please Enter Your Age");
+                    return;
+                } else{
+                    $('#myForm .p4').text("");
+                }
+
+                if(!character){
+                    $('#myForm .p3').text("Please Enter The Character");
+                    return;
+                } else{
+                    $('#myForm .p3').text("");
+                }
+
+    
+                if (!firstname || !email || !lastname || !gender || !date || !month || !year || !age || !character || !experience) {
+                    alert("Semua kolom harus diisi");
+                    return;
+                }
+    
+                // Store the data in local storage
+                var newData = { email, firstname, lastname, gender, date, month, year, age, character, experience, musicalType };
+                var existingData = JSON.parse(localStorage.getItem('registrants')) || [];
+                existingData.push(newData);
+                localStorage.setItem('registrants', JSON.stringify(existingData));
+    
+                // Clear form fields
+                $("#email").val();
+                $("#first-name").val("");
+                $("#last-name").val("");
+                $("#gender").val("");
+                $("#age").val("");
+                $("#date").val("");
+                $("#month").val("");
+                $("#year").val("");
+                $("#character").val("");
+                $("#experience").val("");
+                $("#musicalType").val("");
+    
+                // Redirect to the data display page
+                window.location.href = "data.html";
+            });
+
+            // Retrieve data from local storage
+            var registrantsData = JSON.parse(localStorage.getItem('registrants')) || [];
+    
+            // Populate the table with retrieved data
+            for (var i = 0; i < registrantsData.length; i++) {
+                var newRow = "<tr><td>" + registrantsData[i].musicalType + "</td><td>" + registrantsData[i].email + "</td><td>" + registrantsData[i].firstname + "</td><td>" + registrantsData[i].lastname + "</td><td>" + registrantsData[i].gender + "</td><td>" + registrantsData[i].date + "</td><td>" + registrantsData[i].month + "</td><td>" + registrantsData[i].year + "</td><td>" + registrantsData[i].age + "</td><td>" + registrantsData[i].character + "</td><td>" + registrantsData[i].experience + "</td><td><button class=\"btn btn-danger btn-sm delete-btn\" data-index=\"" + i + "\">Delete</button></td></td>";
+                $("#tableBody").append(newRow);
+            }
+
+            $('#myTable').DataTable();
+
+            var table = $('#myTable').DataTable();
+
+            // Handle Delete button click
+            $('#myTable tbody').on('click', '.delete-btn', function () {
+                var rowIndex = $(this).data('index');
+
+                // Display a confirmation message using SweetAlert
+                Swal.fire({
+                    title: "Do you want to delete this data?",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#d33",
+                    cancelButtonColor: "#3085d6",
+                    confirmButtonText: "Yes, delete it!",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Remove the row from the DataTable
+                        table.row($(this).closest('tr')).remove().draw();
+
+                        // Remove the data from the array
+                        registrantsData.splice(rowIndex, 1);
+
+                        // Update local storage
+                        localStorage.setItem('registrants', JSON.stringify(registrantsData));
+
+                        Swal.fire("Deleted!", "Your data has been deleted.", "success");
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <style>
+        #searching{
+            border: 2px solid #373737;
+            background-color: #ffffffb1;
+            outline: none;
+            color: #ffffff; 
+            margin: 3px 0;
+        }
+            #searching:focus{
+                border: #ffffff 1px solid;
+                outline: none;
+                box-shadow: 0 0 6px #ffffff;
+            }
+        .form-control:focus{
+            box-shadow: 0 0 6px #ffffff;
+            border: 2px solid #373737;
+            outline: none;
+        }
+    </style>
+
+</body>
+</html>
